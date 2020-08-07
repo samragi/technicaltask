@@ -20,6 +20,7 @@ public class AddToBasketPage extends BaseClass{
 		Assert.assertEquals("https://www.superdry.com/mens/jeans/details/153543/conor-taper-jeans--dark-blue", driver.getCurrentUrl());
 
 		// select Size from Drop Down
+		
 		action.dropDown((AddToBasketConstants.SIZEDROPDOWN), 5);
 		action.clickOnElement(AddToBasketConstants.ADDTOBASKETBUTTON);
 		
