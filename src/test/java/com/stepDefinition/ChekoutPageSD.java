@@ -2,6 +2,7 @@ package com.stepDefinition;
 
 import com.runner.BaseClass;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -14,8 +15,8 @@ public class ChekoutPageSD extends BaseClass {
 
 	
 	@When("^I enter valid credentials$")
-	public void i_enter_valid_credentials() throws Throwable {
-	   checkoutPage.verifyCheckoutDetails();
+	public void i_enter_valid_credentials(DataTable checkoutDetails) throws Throwable {
+	   checkoutPage.verifyCheckoutDetails(checkoutDetails);;
 	}
 
 	@When("^I click on Buy now$")

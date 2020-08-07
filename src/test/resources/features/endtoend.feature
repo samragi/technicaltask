@@ -9,6 +9,12 @@ And I click on Basket button
 And I click on checkout button
 And I continue as a guest customer
 And I enter valid credentials
+|firstname|samragi|
+|lastname|singh|
+|phonenumber|07365389266|
+|email|samragishaktawat@gmail.com|
+|confirmemail|samragishaktawat@gmail.com|
+|postcode|CR2 6PZ|
 And I click on Buy now
 Then I will be able to successfully place the order
 

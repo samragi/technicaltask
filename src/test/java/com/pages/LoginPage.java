@@ -25,14 +25,6 @@ public class LoginPage extends BaseClass {
 		String username = validloginDetails.get("email");
 		String password = validloginDetails.get("Password");
 
-		/*
-		 * driver.findElement(USERNAME).clear();
-		 * driver.findElement(USERNAME).sendKeys(username);
-		 * driver.findElement(PASSWORD).clear();
-		 * driver.findElement(PASSWORD).sendKeys(password);
-		 */
-		
-
 		action.updateTextBox(LoginConstants.USERNAME, username);
 		action.updateTextBox(LoginConstants.PASSWORD, password);
 		action.clickOnElement(LoginConstants.LOGINBUTTON);
@@ -44,15 +36,6 @@ public class LoginPage extends BaseClass {
 		Map<String, String> invalidloginDetails = invalidloginTable.asMap(String.class, String.class);
 		String username = invalidloginDetails.get("email");
 		String password = invalidloginDetails.get("Password");
-
-		Thread.sleep(3000);
-		/*
-		 * driver.findElement(USERNAME).clear();
-		 * driver.findElement(USERNAME).sendKeys(loginDetails.get("email"));
-		 * driver.findElement(PASSWORD).clear();
-		 * driver.findElement(PASSWORD).sendKeys(loginDetails.get("password"));
-		 */
-	
 
 		action.updateTextBox(LoginConstants.USERNAME, username);
 		action.updateTextBox(LoginConstants.PASSWORD, password);

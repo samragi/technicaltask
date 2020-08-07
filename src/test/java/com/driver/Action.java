@@ -1,7 +1,7 @@
 package com.driver;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.support.ui.Select;
 
 import com.runner.BaseClass;
 
@@ -17,5 +17,10 @@ public class Action extends BaseClass{
 		driver.findElement(element).click();
 		return element;
 	}
+	
+	public void dropDown(By element, int index) {
+	 	Select sizeDropDown =new Select(driver.findElement(element));
+	 	sizeDropDown.selectByIndex(index); 
+	    }
 
 }

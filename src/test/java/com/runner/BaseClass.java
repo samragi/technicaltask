@@ -3,8 +3,7 @@ package com.runner;
 import org.openqa.selenium.WebDriver;
 
 import com.driver.Action;
-import com.driver.ExplicitWait;
-import com.driver.Implicitwait;
+import com.driver.Waits;
 import com.pages.AddToBasketPage;
 import com.pages.CheckoutPage;
 import com.pages.HomePage;
@@ -23,11 +22,7 @@ public class BaseClass{
     public static MyAccountPage myAccountPage = new MyAccountPage();
 	public static AddToBasketPage addToBasketPage=new AddToBasketPage();
 	public static CheckoutPage checkoutPage=new CheckoutPage();
-	
-	
-	
 	public static Action action=new Action();
-	public static Implicitwait implicitWait=new Implicitwait();
-	public static ExplicitWait explicitWait=new ExplicitWait();
-	
+	public static Waits wait=new Waits();
+
 }

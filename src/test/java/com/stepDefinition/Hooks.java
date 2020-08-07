@@ -15,7 +15,7 @@ public class Hooks extends BaseClass {
 	  System.setProperty("webdriver.chrome.driver","/Users/samragi/Desktop/Automation/chromedriver3");
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
-	  implicitWait.applyImplicitWait();
+	  wait.applyImplicitWait();
 	  driver.get(URL);
 	  
 	}
